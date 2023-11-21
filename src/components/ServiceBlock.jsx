@@ -12,7 +12,7 @@ export function ServiceBlock({ data }){
         <p>{price} Eur</p>
         <p>{description}</p>
         <a href={link} className="icon-link">
-          Call to action <FaAngleRight />
+          Read more <FaAngleRight />
         </a>
       </div>
     );
