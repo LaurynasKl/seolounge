@@ -2,12 +2,12 @@ import { Footer } from "../sections/Footer";
 import { Header } from "../sections/Header";
 import { Services } from "../sections/Services";
 
-export function HomePage(){
+export function ServicesPage(){
     return (
         <>
         <Header />
         <main>
-            <Services limit={3}/>
+            <Services sortBy="price09" />
         </main>
         <Footer />
         </>
