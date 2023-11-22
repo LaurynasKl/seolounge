@@ -12,7 +12,7 @@ export function Services({ limit, sortBy }){
         description: `Paragraph of text beneath the heading to explain the heading. 
         We'll add onto it with another sentence and probably just keep going until we run out of words.`,
         link: '/services/HTML',
-        price: 10.00,
+        price: 10,
         icon: <FaHtml5 />,
       },
       {
@@ -21,7 +21,7 @@ export function Services({ limit, sortBy }){
         description: `Paragraph of text beneath the heading to explain the heading. 
         We'll add onto it with another sentence and probably just keep going until we run out of words.`,
         link: '/services/CSS',
-        price: 100.00,
+        price: 100,
         icon: <FaCss3Alt />,
       },
       {
@@ -30,7 +30,7 @@ export function Services({ limit, sortBy }){
         description: `Paragraph of text beneath the heading to explain the heading. 
         We'll add onto it with another sentence and probably just keep going until we run out of words.`,
         link: '/services/JavaScript',
-        price: 50.00,
+        price: 50,
         icon: <TbBrandJavascript />,
       },
       {
@@ -39,7 +39,7 @@ export function Services({ limit, sortBy }){
         description: `Paragraph of text beneath the heading to explain the heading. 
         We'll add onto it with another sentence and probably just keep going until we run out of words.`,
         link: '/services/Git',
-        price: 20.00,
+        price: 20,
         icon: <FaGitAlt />,
       },
       {
@@ -48,7 +48,7 @@ export function Services({ limit, sortBy }){
         description: `Paragraph of text beneath the heading to explain the heading. 
         We'll add onto it with another sentence and probably just keep going until we run out of words.`,
         link: '/services/React-js',
-        price: 15.00,
+        price: 15,
         icon: <FaReact />,
       },
       {
@@ -57,7 +57,7 @@ export function Services({ limit, sortBy }){
         description: `Paragraph of text beneath the heading to explain the heading. 
         We'll add onto it with another sentence and probably just keep going until we run out of words.`,
         link: '/services/Saldytuvas',
-        price: 0.00,
+        price: 0,
         icon: <CgSmartHomeRefrigerator />,
       },
   ];

@@ -1,6 +1,6 @@
 import { Footer } from "../sections/Footer";
 import { Header } from "../sections/Header";
-import ufo from '../assets/ufo.webp'
+import ufo from '../assets/ufo .webp'
 
 export function NoPage(){
     return (

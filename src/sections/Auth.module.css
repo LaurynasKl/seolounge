@@ -1,0 +1,12 @@
+.mainTitle{
+    font-size: clamp(2rem, 5vw, 4rem);
+    /* font-size: calc(2rem + 2vw); */
+    /* --x: 20px
+    font-size: calc(2rem + 2vw + var(--x)); */
+}
+
+/* @media (min-width: 30rem){
+    .mainTitle{
+        font-size: 2.5rem;
+    }
+} */
