@@ -4,7 +4,7 @@ import { ServicesPage } from "./pages/ServicesPage";
 import { HomePage } from "./pages/HomePage";
 import { NoPage } from './pages/NoPage';
 import { RegisterPage } from './pages/RegisterPage';
-import { Login } from './sections/Login';
+// import { Login } from './sections/Login';
 import { TosPage } from './pages/TosPage';
 
 function App() {
