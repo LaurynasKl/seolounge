@@ -1,36 +1,50 @@
+import { useState, useEffect } from "react";
+
 export function HowCanWeHelp(){
-    const data = [
-        {
-            img: '/img/help/icon1.png',
-            title: 'Search Engine Optimization',
-            description: 'Maecenas elementum sapien in metus placerat finibus. Lorem ipsum dolor sit amet, vix an natum labitur eleif.',
-        },
-        {
-            img: '/img/help/icon2.png',
-            title: 'Social Media Strategy',
-            description: 'Maecenas elementum sapien in metus placerat finibus. Lorem ipsum dolor sit amet, vix an natum labitur eleif.',
-        },
-        {
-            img: '/img/help/icon3.png',
-            title: 'Real Time and Data',
-            description: 'Maecenas elementum sapien in metus placerat finibus. Lorem ipsum dolor sit amet, vix an natum labitur eleif.',
-        },
-        {
-            img: '/img/help/icon4.png',
-            title: 'Online Media Management',
-            description: 'Maecenas elementum sapien in metus placerat finibus. Lorem ipsum dolor sit amet, vix an natum labitur eleif.',
-        },
-        {
-            img: '/img/help/icon5.png',
-            title: 'Reporting & Analysis',
-            description: 'Maecenas elementum sapien in metus placerat finibus. Lorem ipsum dolor sit amet, vix an natum labitur eleif.',
-        },
-        {
-            img: '/img/help/icon6.png',
-            title: 'Penalty Recovery',
-            description: 'Maecenas elementum sapien in metus placerat finibus. Lorem ipsum dolor sit amet, vix an natum labitur eleif.',
-        },
-    ];
+    const [data, setData] = useState([])
+    const [isError, setIsError] = useState(false);
+    // const data = [
+    //     {
+    //         img: '/img/help/icon1.png',
+    //         title: 'Search Engine Optimization',
+    //         description: 'Maecenas elementum sapien in metus placerat finibus. Lorem ipsum dolor sit amet, vix an natum labitur eleif.',
+    //     },
+    //     {
+    //         img: '/img/help/icon2.png',
+    //         title: 'Social Media Strategy',
+    //         description: 'Maecenas elementum sapien in metus placerat finibus. Lorem ipsum dolor sit amet, vix an natum labitur eleif.',
+    //     },
+    //     {
+    //         img: '/img/help/icon3.png',
+    //         title: 'Real Time and Data',
+    //         description: 'Maecenas elementum sapien in metus placerat finibus. Lorem ipsum dolor sit amet, vix an natum labitur eleif.',
+    //     },
+    //     {
+    //         img: '/img/help/icon4.png',
+    //         title: 'Online Media Management',
+    //         description: 'Maecenas elementum sapien in metus placerat finibus. Lorem ipsum dolor sit amet, vix an natum labitur eleif.',
+    //     },
+    //     {
+    //         img: '/img/help/icon5.png',
+    //         title: 'Reporting & Analysis',
+    //         description: 'Maecenas elementum sapien in metus placerat finibus. Lorem ipsum dolor sit amet, vix an natum labitur eleif.',
+    //     },
+    //     {
+    //         img: '/img/help/icon6.png',
+    //         title: 'Penalty Recovery',
+    //         description: 'Maecenas elementum sapien in metus placerat finibus. Lorem ipsum dolor sit amet, vix an natum labitur eleif.',
+    //     },
+    // ];
+
+    useEffect(() => {
+        fetch('http://localhost:3000/data/help.json')
+            .then(res => res.json())
+            .then(resData => setData(resData.services))
+            .then(() => console.log(data))
+            .catch(err => setIsError(true));
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, []);
+
 
     return(
         <div className="container px-4 py-5" id="featured-3">
